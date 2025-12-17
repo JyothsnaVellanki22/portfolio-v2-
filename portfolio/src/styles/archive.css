@@ -1,0 +1,108 @@
+/* Archive Page */
+.archive-page {
+    padding: 100px 50px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.archive-header {
+    margin-bottom: 80px;
+}
+
+.back-link {
+    color: var(--green);
+    font-family: var(--font-mono);
+    font-size: var(--fz-md);
+    margin-bottom: 20px;
+    display: inline-block;
+}
+
+.big-heading {
+    font-size: 60px;
+    color: var(--lightest-slate);
+    margin-bottom: 10px;
+}
+
+.subtitle {
+    color: var(--green);
+    font-family: var(--font-mono);
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th,
+td {
+    padding: 15px 10px;
+    text-align: left;
+    border-bottom: 1px solid var(--light-navy);
+}
+
+th {
+    color: var(--slate);
+    font-family: var(--font-mono);
+    font-size: var(--fz-md);
+    font-weight: 400;
+}
+
+td {
+    color: var(--light-slate);
+    font-size: var(--fz-md);
+}
+
+.year {
+    color: var(--green);
+    font-family: var(--font-mono);
+    font-size: var(--fz-sm);
+}
+
+.title {
+    color: var(--lightest-slate);
+    font-weight: 600;
+    font-size: var(--fz-xl);
+}
+
+.tech-tag {
+    font-family: var(--font-mono);
+    font-size: var(--fz-xs);
+    color: var(--green);
+    background-color: rgba(139, 92, 246, 0.1);
+    /* Violet with low opacity */
+    padding: 5px 12px;
+    border-radius: 9999px;
+    /* Pill shape */
+    display: inline-block;
+    margin-right: 8px;
+    margin-bottom: 6px;
+    line-height: 1;
+    transition: var(--transition);
+}
+
+.tech-tag:hover {
+    background-color: rgba(139, 92, 246, 0.2);
+}
+
+.tech-tag:not(:last-child)::after {
+    content: none;
+}
+
+.links a {
+    color: var(--light-slate);
+    font-size: 20px;
+}
+
+.links a:hover {
+    color: var(--green);
+}
+
+.hide-on-mobile {
+    display: none;
+}
+
+@media (min-width: 768px) {
+    .hide-on-mobile {
+        display: table-cell;
+    }
+}

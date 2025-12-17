@@ -1,0 +1,234 @@
+.app {
+  min-height: 100vh;
+  width: 100%;
+}
+
+.layout {
+  display: flex;
+  flex-direction: column;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+/* Spotlight Effect helper (if needed) */
+.pointer-events-none {
+  pointer-events: none;
+}
+
+.fixed {
+  position: fixed;
+}
+
+.inset-0 {
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.z-30 {
+  z-index: 30;
+}
+
+@media (min-width: 1024px) {
+  .layout {
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0 96px;
+  }
+
+  .sidebar {
+    width: 40%;
+    max-width: 400px;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    /* sticky needs height or bottom? fixed needs coords */
+    padding-top: 96px;
+    padding-bottom: 96px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .main-content {
+    width: 50%;
+    margin-left: auto;
+    /* push to right */
+    padding-top: 96px;
+    padding-bottom: 96px;
+  }
+}
+
+/* Sidebar Styles */
+.sidebar h1 {
+  font-size: 48px;
+  font-weight: 700;
+  color: var(--lightest-slate);
+  margin-bottom: 1rem;
+}
+
+.sidebar h2 {
+  font-size: 20px;
+  font-weight: 500;
+  color: var(--light-slate);
+  margin-bottom: 1.5rem;
+}
+
+.sidebar p {
+  color: var(--slate);
+  max-width: 300px;
+  font-size: var(--fz-md);
+  margin-bottom: 4rem;
+}
+
+.nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.nav li {
+  margin-bottom: 1rem;
+}
+
+.nav-link {
+  display: flex;
+  align-items: center;
+  color: var(--slate);
+  font-size: var(--fz-xs);
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  padding: 10px 0;
+}
+
+.nav-link:hover {
+  color: var(--lightest-slate);
+}
+
+/* Content Sections */
+.section {
+  margin-bottom: 10rem;
+}
+
+.section-title {
+  position: sticky;
+  top: 0;
+  background: rgba(10, 25, 47, 0.85);
+  /* semi-transparent background for sticky headers on mobile */
+  backdrop-filter: blur(10px);
+  padding: 20px 0;
+  margin-bottom: 20px;
+  z-index: 10;
+  display: block;
+}
+
+@media (min-width: 1024px) {
+  .section-title {
+    display: none;
+    /* Hide sticky headers on desktop if we following reference exactly where side nav drives it */
+    position: relative;
+    background: none;
+  }
+}
+
+/* Experience Cards */
+.experience-list {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.job {
+  padding: 20px;
+  border-radius: var(--border-radius);
+  transition: var(--transition);
+}
+
+.job:hover {
+  background-color: rgba(255, 255, 255, 0.05);
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+}
+
+.job h3 {
+  font-size: var(--fz-lg);
+  color: var(--lightest-slate);
+}
+
+.range {
+  font-size: var(--fz-xs);
+  font-family: var(--font-mono);
+  color: var(--light-slate);
+  margin-bottom: 1rem;
+}
+
+/* Project Cards */
+.project-item {
+  margin-bottom: 2rem;
+  list-style: none;
+}
+
+.project-content {
+  padding: 20px;
+  border-radius: var(--border-radius);
+  transition: var(--transition);
+}
+
+.project-content:hover {
+  background-color: rgba(255, 255, 255, 0.05);
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+}
+
+.tech-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  list-style: none;
+  padding: 0;
+  margin-top: 20px;
+}
+
+.tech-list li {
+  font-family: var(--font-mono);
+  font-size: var(--fz-xs);
+  color: var(--green);
+  background: rgba(100, 255, 218, 0.1);
+  padding: 5px 10px;
+  border-radius: 12px;
+}
+/* Socials */
+.socials {
+  margin-top: 2rem;
+  display: flex;
+  gap: 20px;
+}
+
+.social-link {
+  color: var(--slate);
+  font-size: 24px;
+  transition: var(--transition);
+}
+
+.social-link:hover {
+  color: var(--lightest-slate);
+  transform: translateY(-3px);
+}
+
+.archive-link-wrapper {
+  margin-top: 50px;
+  text-align: center;
+}
+
+.archive-link {
+  color: var(--green);
+  font-family: var(--font-mono);
+  font-size: var(--fz-md);
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+}
+
+.archive-link:hover {
+  border-bottom-color: var(--green);
+}

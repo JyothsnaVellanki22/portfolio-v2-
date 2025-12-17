@@ -1,0 +1,37 @@
+# Portfolio Website Implementation Plan
+
+## Goal Description
+Create a modern, premium portfolio website for a software developer, inspired by [Brittany Chiang's portfolio](https://brittanychiang.com/). The design will focus on a dark aesthetic, clean typography, single-page seamless scrolling, and subtle interactive elements (spotlight cursor, hover states).
+
+## User Review Required
+> [!IMPORTANT]
+> - I will create the project in a new folder `portfolio` within your current workspace.
+> - The design will be implemented using **Vanilla CSS** to match the premium custom feel of the reference.
+> - Content will be placeholders as requested ("content i'll make the changes").
+
+## Proposed Changes
+We will create a new React application using Vite in the `portfolio` directory.
+
+### Architecture
+- **Framework**: React (Vite)
+- **Styling**: Vanilla CSS (CSS Variables for theming)
+- **Icons**: `react-icons` (if needed) or SVGs.
+
+### File Structure
+- `src/styles/`: Global variables, reset, fonts.
+- `src/components/`: Reusable UI components.
+    - `Layout.jsx`: Main wrapper handling the grid layout (Sidebar + Content).
+    - `Sidebar.jsx`: Fixed container for profile info and nav.
+    - `MainContent.jsx`: Scrollable container for sections.
+    - `Nav.jsx`: Navigation links.
+    - `Experience.jsx`, `Projects.jsx`, `About.jsx`: Content sections.
+- `src/App.jsx`: Entry point.
+
+## Verification Plan
+### Automated Tests
+- `npm run build` to verify build success.
+
+### Manual Verification
+- Visual check of the dark theme and layout.
+- Verify smooth scrolling and active state updating in navigation.
+- Verify the "spotlight" hover effect using the browser tool or visual inspection.

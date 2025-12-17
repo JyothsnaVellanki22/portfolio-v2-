@@ -1,0 +1,42 @@
+:root {
+  /* Renamed/remapped for the new Dark Grey/Violet theme */
+  --navy: #121212;
+  /* Main Background: Darker, closer to black */
+  --light-navy: #1E1E1E;
+  /* Secondary Background: Card/Hover states */
+  --lightest-navy: #2D2D2D;
+  /* Tertiary: Borders or lighter cards */
+
+  --slate: #A1A1AA;
+  /* Muted Text: Neutral grey */
+  --light-slate: #D4D4D8;
+  /* Secondary Text: Lighter grey */
+  --lightest-slate: #F4F4F5;
+  /* Primary Text: Almost white */
+  --white: #FFFFFF;
+
+  --green: #8B5CF6;
+  /* Accent: Violet (Replcing Teal) */
+
+  --font-sans: 'Outfit', 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --font-mono: 'JetBrains Mono', 'Fira Code', 'Roboto Mono', monospace;
+
+  --fz-xxs: 12px;
+  --fz-xs: 13px;
+  --fz-sm: 14px;
+  --fz-md: 16px;
+  --fz-lg: 18px;
+  --fz-xl: 20px;
+  --fz-xxl: 22px;
+  --fz-heading: 32px;
+
+  --border-radius: 8px;
+  /* Slightly more rounded for modern feel */
+  --nav-height: 100px;
+  --nav-scroll-height: 70px;
+
+  --tab-height: 42px;
+  --tab-width: 120px;
+
+  --transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
+}
