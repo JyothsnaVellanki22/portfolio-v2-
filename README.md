@@ -3,6 +3,8 @@
 A modern, full-stack portfolio website featuring an integrated **RAG (Retrieval-Augmented Generation) Chatbot**.  
 The project demonstrates robust software engineering practices, combining a responsive frontend with a complex AI-powered backend.
 
+Website: https://portfolio-v2-eight-beige.vercel.app/
+
 ## 🚀 Features
 
 ### 1. Portfolio Website (Frontend)
